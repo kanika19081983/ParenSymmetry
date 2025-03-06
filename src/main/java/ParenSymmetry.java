@@ -4,7 +4,18 @@ import java.util.List;
 public class ParenSymmetry {
 
     public Boolean isBalanced(String s) {
-        return null;
+
+        int idx = 0;
+        while (idx < s.length()) {
+            char currentGlyph = s.charAt(idx);
+            if (s.charAt(idx) == '(') {
+                idx++;
+            } else if (s.charAt(idx) == ')') {
+                idx--;
+
+            }
+        }
+        return (idx == 0);
     }
 
     private void checkFile(String filename) {
