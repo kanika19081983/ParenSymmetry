@@ -1,5 +1,7 @@
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class ParenSymmetry {
 
@@ -30,8 +32,15 @@ public class ParenSymmetry {
 
     private void checkFile(String filename) {
         // open file named filename
-;
+        File file = new File("filename");
         // for each line in the file
+        Scanner myReader = new Scanner(file);
+        while (myReader.hasNextLine()) {
+            String data = myReader.nextLine();
+            System.out.println(data);
+        }
+        myReader.close();
+        }
             // read the line
             // print whether or not the line's parenthesis are balanced
 
