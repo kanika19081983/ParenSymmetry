@@ -4,19 +4,26 @@ import java.util.List;
 public class ParenSymmetry {
 
     public Boolean isBalanced(String s) {
-
+        String a = "";
+        int sphinx = 0;
         int idx = 0;
         while (idx < s.length()) {
             char currentGlyph = s.charAt(idx);
-            if (s.charAt(idx) == '(') {
+            if (s.charAt(sphinx) == '(') {
                 idx++;
-            } else if (s.charAt(idx) == ')') {
+            } else if (s.charAt(sphinx) == ')') {
                 idx--;
 
             }
+            if (sphinx < 0) {
+                return false;
+            }
+            idx++;
         }
-        return (idx == 0);
+        return true;
     }
+
+
 
     private void checkFile(String filename) {
         // open file named filename
