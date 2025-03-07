@@ -67,7 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParenSymmetry">
+  <component name="RunManager" selected="JUnit.ParenSymmetryTest">
     <configuration name="ParenSymmetry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ParenSymmetry" />
       <module name="ParenSymmetry" />
@@ -116,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParenSymmetry" />
         <item itemvalue="JUnit.ParenSymmetryTest" />
+        <item itemvalue="Application.ParenSymmetry" />
         <item itemvalue="JUnit.ParenSymmetryTest.isBalancedFalses" />
         <item itemvalue="JUnit.ParenSymmetryTest.isBalancedTrues" />
         <item itemvalue="JUnit.ParenSymmetryTest.isBalanced1" />

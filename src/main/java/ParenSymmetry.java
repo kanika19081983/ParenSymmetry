@@ -4,30 +4,33 @@ import java.util.List;
 public class ParenSymmetry {
 
     public Boolean isBalanced(String s) {
-        String a = "";
+        String a;
         int sphinx = 0;
         int idx = 0;
         while (idx < s.length()) {
-            char currentGlyph = s.charAt(idx);
-            if (s.charAt(sphinx) == '(') {
-                idx++;
-            } else if (s.charAt(sphinx) == ')') {
-                idx--;
+
+           a = String.valueOf(s.charAt(idx));
+
+            if (a.equals("(")) {
+                sphinx++;
+            } else if (a.equals(")")) {
+                sphinx--;
+            } else if (sphinx < 0){
+
+                return false;
 
             }
-            if (sphinx < 0) {
-                return false;
-            }
+
             idx++;
         }
-        return true;
-    }
+        return sphinx==0;
+        }
 
 
 
     private void checkFile(String filename) {
         // open file named filename
-
+;
         // for each line in the file
             // read the line
             // print whether or not the line's parenthesis are balanced
